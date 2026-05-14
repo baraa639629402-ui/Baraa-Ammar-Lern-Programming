@@ -1,0 +1,1162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@473&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+--primary-color: #033b4a;
+--secondary-color: #20c997;
+--gray: #4a4a4d;
+--bg-primary: #ecf0f3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+font-family: 'poppins', sans-serif;
+}
+h1,h2{
+      font-family: "saira", sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.contanar{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem ;
+}
+.text-praimary{
+    color: var(--secondary-color);
+}
+
+.btn-primry{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: all 0.3 ease;
+}
+.btn-primry:hover{
+    background-color: #15a076;
+}
+header{
+    background-color: var(--bg-primary);
+    height: 100vh;
+}
+header .navbar{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+}
+header .navbar nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+        padding:1.5rem 2rem ;
+}
+#home #logo{
+    color: var(--primary-color);
+    font-size:24px;
+    font-weight: 600;
+}
+header .navbar nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .navbar nav ul a{
+    margin: 0 15px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+header .header-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 5rem 2rem 0px;
+    height: 100%;
+}
+
+header .header-content img{
+    max-width: 450px;
+    height: 500px;
+}
+#home .header-content p span{
+font-weight: 700;
+font-size: 20px;
+}
+#home .header-content h1{
+    font-size: 60px;
+    color: var(--primary-color);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+#home .header-content .title{
+    font-size: 20px;
+    color: var(--primary-color);
+    margin: 10px 0;
+    font-weight: 500;
+}
+#home.header-conten.scole{
+    margin: 1rem 0 2rem;
+}
+#home .header-conten.scole a i{
+    font-size: 18px;
+    padding: 10px;
+    background-color: var(--gray);
+    color:#fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#home .header-conten.scole a i:hover{
+    transform: scale(0.85);
+}
+header .header-conten .content-text{
+    margin-bottom: 5rem;
+}
+#About, #skills, #Services{
+    padding: 6rem 0;
+}
+#About h2, #skills h2, #Services h2{
+    text-align: center;
+    font-size: 38px;
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+} 
+#About hr, #skills hr, #Services hr{
+    width: 100px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border: none;
+    margin: 5px auto 0;
+}
+#About .about-content{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+}
+#About .about-content .col-1 h3{ 
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+#About .about-content .col-1 p{
+color: var(--gray);
+margin-bottom: 20px;
+line-height: 1.8;
+}
+#About .about-content .col-2 h3{
+    color: var(--gray);
+
+}
+ .about-content .col-2 p{
+    color: var(--gray);
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+#About .btn-primry img{
+    backdrop-filter: blur(10px)
+}
+/*#skills h2{
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    
+} 
+#skills .skills-content{
+    margin-top: 2rem;
+    background-color: #0f272d;
+}
+#skills{
+    background-color: var(--primary-color);
+}
+#skills .row img{
+    max-width: 40px;
+}
+
+#skills .skills-content .row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+}*/
+/* تنسيق قسم المهارات */
+#skills {
+    background-color: var(--primary-color);
+    padding: 6rem 0;
+    color: white;
+    text-align: center;
+}
+
+#skills h2 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+/* تصميم الشبكة (Grid) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* ترتيب تلقائي حسب عرض الشاشة */
+    gap: 30px;
+    margin-top: 4rem;
+    padding: 20px;
+}
+
+/* تنسيق العنصر الفردي */
+.skill-item {
+    background: rgba(255, 255, 255, 0.05); /* خلفية شفافة خفيفة */
+    padding: 30px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-item img {
+    width: 60px; /* حجم موحد للأيقونات */
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    
+}
+
+.skill-item p {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+/* تأثيرات عند مرور الفأرة (Hover) */
+.skill-item:hover {
+    background: var(--secondary-color);
+    transform: translateY(-10px); /* يرتفع للأعلى قليلاً */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item:hover img {
+    transform: scale(1.1); /* تكبير الأيقونة */
+}
+
+
+#Services{
+    background: #00f4ab0c;
+}
+
+ #Service .heading img{
+width: 55px;
+margin-right: 10px;
+}
+#Service .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Service .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#Service .row .item{
+    background-color: #fff;
+    padding: 30px 15px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+  /*Handle */
+::-webkit-scrollbar-thumb {
+  background: blue; 
+  border-radius: 10px;
+  height: 10px;
+}
+
+/*Handle on hover */
+::-webkit-scrollbar-thumb:hover {  background: rgba(135, 207, 235, 0.815) ;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  height: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: blue; 
+  border-radius: 10px;
+  height: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(135, 207, 235, 0.815)
+}
+
+img {
+  mix-blend-mode: multiply; /* سيقوم بإخفاء اللون الأبيض تماماً */
+}
+/* تأثير الزجاج للقائمة العلوية */
+header .navbar {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px); /* تعتيم خلف القائمة */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* خلفية متدرجة عصرية للهيدر */
+header {
+    background: linear-gradient(135deg, #ecf0f3 0%, #d1d9e0 100%) !important;
+}
+
+/* تحسين شكل بطاقات الخدمات */
+#Service .row .item {
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#Service .row .item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(32, 201, 151, 0.2);
+}
+
+/* تحسين صورة البروفايل */
+header .header-content img {
+    border-radius: 30px;
+    filter: drop-shadow(15px 15px 20px rgba(0,0,0,0.1));
+}
+
+/* تنعيم حواف الأزرار */
+.btn-primry {
+    border-radius: 50px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(32, 201, 151, 0.3);
+}
+/* ضبط التجاوب لجميع الشاشات */
+@media (max-width: 992px) {
+    header .header-content {
+        grid-template-columns: 1fr; /* جعل الصورة تحت النص */
+        text-align: center;
+        padding-top: 8rem;
+    }
+
+    header .header-content img {
+        max-width: 300px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #About .about-content {
+        grid-template-columns: 1fr; /* ترتيب محتوى About عمودياً */
+        gap: 2rem;
+    }
+
+    #Service .row {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* توزيع الخدمات تلقائياً */
+    }
+}
+
+@media (max-width: 768px) {
+    header .navbar nav ul {
+        display: none; /* إخفاء القائمة في الموبايل (يفضل استبدالها لاحقاً بقائمة منسدلة) */
+    }
+    
+    #home .header-content h1 {
+        font-size: 40px; /* تصغير الخط في الموبايل */
+    }
+}
+/* ===== تأثيرات حركة احترافية ===== */
+
+/* ظهور العناصر تدريجيًا */
+header .content-text,
+#About,
+#skills,
+#Services,
+#portfolio {
+    animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* حركة للقائمة */
+.navbar {
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* حركة للاسم */
+#home .header-content h1 {
+    animation: glowText 2s infinite alternate;
+}
+
+@keyframes glowText {
+    from {
+        text-shadow: 0 0 10px rgba(32, 201, 151, 0.4);
+    }
+    to {
+        text-shadow: 0 0 25px rgba(32, 201, 151, 1);
+    }
+}
+
+/* حركة الأيقونات */
+.scole a i {
+    transition: 0.3s ease;
+}
+.scole a i:hover {
+    transform: rotate(10deg) scale(1.2);
+}
+
+/* حركة الصور */
+img {
+    transition: transform 0.5s ease;
+}
+img:hover {
+    transform: scale(1.05);
+}
+
+/* حركة الخدمات */
+#Services .row .item {
+    transition: all 0.4s ease;
+}
+#Services .row .item:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+}
+#Services img{
+    border-radius: 7px;
+}
+
+/* زر About */
+.btn-primry {
+    position: relative;
+    overflow: hidden;
+}
+.btn-primry::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    transition: 0.5s;
+}
+.btn-primry:hover::before {
+    left: 100%;
+}
+.hidden-animation{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.show-animation{
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ===== قائمة جانبية احترافية للموبايل ===== */
+.menu-toggle{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.menu-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 998;
+}
+
+@media (max-width: 768px){
+    .menu-toggle{
+        display: block;
+    }
+
+    header .navbar nav ul{
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 260px;
+        height: 100vh;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 25px;
+        gap: 20px;
+        box-shadow: 5px 0 20px rgba(0,0,0,0.15);
+        transition: left 0.35s ease;
+        z-index: 999;
+    }
+
+    header .navbar nav ul.active{
+        left: 0;
+    }
+
+    .menu-overlay.active{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header .navbar nav ul li a{
+        font-size: 18px;
+        display: block;
+        width: 100%;
+    }
+}
+header .navbar {
+    /* 1. جعل الخلفية بيضاء بوزن شفافية خفيف جداً */
+    background: rgba(255, 255, 255, 0.45) !important;
+    
+    /* 2. تأثير التمويه (أهم خاصية للزجاج) */
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); /* لدعم متصفح سفاري */
+    
+    /* 3. إضافة حدود بيضاء شفافة لتعزيز مظهر حافة الزجاج */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    
+    /* 4. إضافة ظل ناعم جداً لإعطاء عمق */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+/* ===== Sidebar احترافية ===== */
+
+.menu-btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+    color: var(--primary-color);
+    background: white;
+    padding: 10px 12px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* الخلفية السوداء */
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 998;
+}
+
+/* Sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 260px;
+    height: 100vh;
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+    transition: 0.4s ease;
+    z-index: 999;
+    box-shadow: 5px 0 25px rgba(0,0,0,0.4);
+}
+
+.sidebar-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar-header h2{
+    font-size: 22px;
+    color: #20c997;
+}
+
+.sidebar-header p{
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* روابط */
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar ul li{
+    margin: 18px 0;
+}
+
+.sidebar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover{
+    background: #20c997;
+    transform: translateX(5px);
+}
+
+/* عند الفتح */
+.sidebar.active{
+    left: 0;
+}
+
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+:root {
+    --primary-color: #033b4a;
+    --secondary-color: #20c997;
+    --bg-primary: #ecf0f3;
+    --text-dark: #4a4a4d;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-primary);
+}
+
+h1, h2 {
+    font-family: 'Saira', sans-serif;
+}
+/* ضبط التجاوب للهواتف والأجهزة اللوحية */
+@media (max-width: 992px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    #About .about-content {
+        grid-template-columns: 1fr; /* جعل المعلومات تحت بعضها */
+    }
+
+    #Service .row {
+        grid-template-columns: repeat(1, 1fr); /* عرض خدمة واحدة في كل صف */
+    }
+}
+
+/* ضبط المسافات الداخلية (Container Padding) */
+.container {
+    padding: 0 2rem; /* لضمان عدم التصاق المحتوى بحواف الشاشة */
+}
+/* تنسيق قسم معرض الأعمال */
+#portfolio {
+    padding: 6rem 0;
+    background-color: var(--bg-primary);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 3rem;
+}
+
+.portfolio-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    height: 250px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(3, 59, 74, 0.9); /* نفس لونك الأساسي */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-item:hover .project-overlay {
+    opacity: 1;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+/* تنسيق قسم الاتصال */
+#Contact {
+    padding: 6rem 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 3rem auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(32, 201, 151, 0.1);
+}
+
+form button {
+    cursor: pointer;
+    border: none;
+    padding: 15px !important;
+}
+/* تنسيق قسم معرض الأعمال */
+#portfolio {
+    padding: 6rem 0;
+    background-color: var(--bg-primary);
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 38px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+#portfolio hr {
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border: none;
+    margin: 0 auto 3rem;
+}
+
+/* تصميم شبكة الصور */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* توزيع تلقائي للصور */
+    gap: 25px;
+    padding: 0 20px;
+}
+
+/* حاوي الصورة الفردية */
+.portfolio-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 280px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* لضمان ملء الصورة للمساحة دون تشوه */
+    transition: transform 0.5s ease;
+}
+
+/* الطبقة التي تظهر عند تمرير الماوس */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 59, 74, 0.9); /* استخدام لونك الأساسي */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* مخفية في البداية */
+    transition: all 0.4s ease;
+    padding: 20px;
+}
+
+/* التأثير عند Hover */
+.portfolio-item:hover .project-overlay {
+    opacity: 1;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1); /* تكبير بسيط للصورة */
+}
+
+.project-overlay h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
+.project-overlay p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+/* تنسيق شبكة معرض الأعمال */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 3rem;
+}
+
+.portfolio-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 280px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* الطبقة التي تظهر فوق الصورة عند تمرير الماوس */
+.project-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(3, 59, 74, 0.9); /* استخدام اللون الأساسي الخاص بك */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-item:hover .project-overlay {
+    opacity: 1;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.project-overlay h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.project-overlay .btn-primry {
+    margin-top: 15px;
+    padding: 5px 15px;
+    font-size: 12px;
+}
+.portfolio-item{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+/* تحسينات عامة للتجاوب */
+.container, .contanar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 5%;
+}
+
+/* ضبط الهيدر للشاشات الصغيرة */
+@media (max-width: 992px) {
+    header .header-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 8rem;
+        height: auto;
+    }
+    header .header-content img {
+        max-width: 80%;
+        height: auto;
+        margin-top: 2rem;
+    }
+    #home .header-content h1 {
+        font-size: 40px;
+    }
+}
+
+/* القائمة الجانبية للموبايل */
+@media (max-width: 768px) {
+    header .navbar nav ul {
+        display: none; /* إخفاء القائمة العلوية */
+    }
+
+    .menu-btn {
+        display: block; /* إظهار زر القائمة */
+    }
+
+    /* تصميم الـ Sidebar */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%; /* مخفية لليسار */
+        width: 250px;
+        height: 100vh;
+        background: #0f172a;
+        z-index: 2000;
+        transition: 0.4s ease;
+        padding: 50px 20px;
+    }
+
+    .sidebar.active {
+        left: 0; /* تظهر عند إضافة class active */
+    }
+
+    .sidebar ul {
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+    }
+
+    .sidebar ul li a {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    /* طبقة التعتيم خلف القائمة */
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.6);
+        display: none;
+        z-index: 1500;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+}
+
+/* تنسيق الجداول والخدمات للموبايل */
+@media (max-width: 600px) {
+    #About .about-content, 
+    .skills-grid, 
+    #Services .row, 
+    .portfolio-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+/* الشاشات الصغيرة جداً (أقل من 480px) */
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* أيقونة واحدة في الصف */
+    }
+    /* كود الاستجابة (Responsive Code) فقط */
+
+@media (max-width: 1024px) {
+    .header-content, nav {
+        padding: 0 20px;
+    }
+    .text-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* تحويل الهيدر ليكون عمودياً */
+    .header-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+        padding-top: 50px;
+    }
+
+    .nav-links {
+        display: none; /* إخفاء القائمة في الشاشات الصغيرة إلا إذا برمجت زر القائمة */
+    }
+
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .text-content p {
+        margin: 0 auto 20px;
+    }
+
+    .image-content img {
+        max-width: 280px; /* تصغير الصورة لتناسب الموبايل */
+    }
+
+    /* جعل الشبكات تأخذ مساحة الشاشة */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        padding: 20px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-content img {
+        max-width: 200px;
+    }
+
+    .btn-outline {
+        margin-right: 0;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .btn-primary {
+        display: block;
+    }
+}
+/* منع تداخل الصورة مع قسم About Me */
+
+.image-content {
+    position: relative;
+    z-index: 1; /* جعل الصورة في طبقة منخفضة */
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* يمنع وجود مسافات فارغة تحت الصورة */
+    pointer-events: none; /* لمنع الصورة من اعتراض النقرات إذا تداخلت */
+}
+
+#about, .about-section {
+    position: relative;
+    z-index: 10; /* جعل قسم About Me في طبقة أعلى */
+    background-color: var(--bg-light); /* إعطاؤه خلفية لضمان عدم ظهور ما تحته */
+    clear: both; /* التأكد من أن القسم يبدأ بعد العناصر العائمة */
+}
+
+/* إذا كنت تستخدم Flexbox في الهيدر، تأكد من التغليف */
+header .header-content {
+    flex-wrap: wrap; 
+    overflow: hidden; /* قص أي أجزاء من الصورة تخرج عن حدود الهيدر */
+}
+/* حل مشكلة تداخل الصورة مع قسم About Me */
+
+@media (max-width: 992px) {
+    header {
+        height: auto; /* السماح للهيدر بالتمدد حسب المحتوى */
+        padding-bottom: 50px;
+    }
+
+    header .header-content {
+        flex-direction: column-reverse; /* وضع الصورة فوق النص أو العكس لعدم التصادم */
+        text-align: center;
+        gap: 2rem;
+    }
+
+    header .header-content img {
+        max-width: 70%; /* تصغير الصورة في الشاشات المتوسطة */
+        margin: 0 auto;
+        position: relative; /* التأكد أنها لا تطفو فوق الأقسام الأخرى */
+        z-index: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    header .header-content img {
+        max-width: 90%; /* حجم الصورة للموبايل */
+    }
+    
+    #About {
+        margin-top: 0;
+        position: relative;
+        z-index: 2; /* جعل قسم About فوق أي خلفيات هائمة */
+        background-color: white; /* ضمان عدم شفافية القسم */
+    }
+}
+
+/* لمنع الصورة من الخروج عن حدود الهيدر نهائياً */
+header {
+    overflow: hidden; 
+}
